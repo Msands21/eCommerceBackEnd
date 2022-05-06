@@ -57,7 +57,7 @@ router.get('/:id', (req, res) => {
             res.status(404).json({ message: 'No products for this id' });
             return;
         }
-        res.json(dbProductData)
+        res.json(dataP)
     })
     .catch(err => {
         console.log(err);
